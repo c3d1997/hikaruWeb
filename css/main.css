@@ -1,0 +1,190 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.f-12 {
+  font-size: clamp(12px, 1vw, 12px);
+}
+
+.f-14 {
+  font-size: clamp(14px, 1vw, 14px);
+}
+
+.f-16 {
+  font-size: clamp(16px, 1vw, 16px);
+}
+
+.f-18 {
+  font-size: clamp(18px, 1vw, 18px);
+}
+
+.f-22 {
+  font-size: clamp(22px, 1vw, 22px);
+}
+
+.f-26 {
+  font-size: clamp(26px, 1vw, 26px);
+}
+
+.f-35 {
+  font-size: clamp(35px, 1vw, 35px);
+}
+
+.f-50 {
+  font-size: clamp(50px, 1vw, 50px);
+}
+
+.f-106 {
+  font-size: clamp(106px, 1vw, 106px);
+}
+
+.f-130 {
+  font-size: clamp(130px, 1vw, 130px);
+}
+
+.f-166 {
+  font-size: clamp(166px, 1vw, 166px);
+}
+
+.f-168 {
+  font-size: clamp(168px, 1vw, 168px);
+}
+
+.f-184 {
+  font-size: clamp(184px, 1vw, 184px);
+}

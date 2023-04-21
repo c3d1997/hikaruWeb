@@ -1,0 +1,39 @@
+.f-12 {
+  @include font-size-clamp($pc-font-size-1, 1vw, $pc-font-size-1);
+}
+.f-14 {
+  @include font-size-clamp($pc-font-size-2, 1vw, $pc-font-size-2);
+}
+.f-16 {
+  @include font-size-clamp($pc-font-size-3, 1vw, $pc-font-size-3);
+}
+.f-18 {
+  @include font-size-clamp($pc-font-size-4, 1vw, $pc-font-size-4);
+}
+.f-22 {
+  @include font-size-clamp($pc-font-size-5, 1vw, $pc-font-size-5);
+}
+.f-26 {
+  @include font-size-clamp($pc-font-size-6, 1vw, $pc-font-size-6);
+}
+.f-35 {
+  @include font-size-clamp($pc-font-size-7, 1vw, $pc-font-size-7);
+}
+.f-50 {
+  @include font-size-clamp($pc-font-size-8, 1vw, $pc-font-size-8);
+}
+.f-106 {
+  @include font-size-clamp($pc-font-size-9, 1vw, $pc-font-size-9);
+}
+.f-130 {
+  @include font-size-clamp($pc-font-size-10, 1vw, $pc-font-size-10);
+}
+.f-166 {
+  @include font-size-clamp($pc-font-size-11, 1vw, $pc-font-size-11);
+}
+.f-168 {
+  @include font-size-clamp($pc-font-size-12, 1vw, $pc-font-size-12);
+}
+.f-184 {
+  @include font-size-clamp($pc-font-size-13, 1vw, $pc-font-size-13);
+}
