@@ -12,61 +12,135 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="font/BAHNSCHRIFT.TTF">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <!-- 動態svg -->
-  <svg width="507" height="465" viewBox="0 0 507 465" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <!-- Path 1: Vertical line -->
-    <path d="M253 1V233" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="232">
-      <animate attributeName="stroke-dashoffset" from="232" to="0" dur="2s" fill="freeze" />
-    </path>
-    <!-- Path 1: Vertical line - Part 2 -->
-    <path d="M253 233V464" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="232">
-      <animate attributeName="stroke-dashoffset" from="-232" to="0" dur="2s" fill="freeze" />
-    </path>
-
-    <!-- Path 2: Left diagonal line (upward) - Part 1 -->
-    <path d="M253 1L127 164.5" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
-      <animate attributeName="stroke-dashoffset" from="207.5" to="0" dur="2s" fill="freeze" />
-    </path>
-    <!-- Path 2: Left diagonal line (upward) - Part 2 -->
-    <path d="M127 164.5L1 328" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
-      <animate attributeName="stroke-dashoffset" from="-207.5" to="0" dur="2s" fill="freeze" />
-    </path>
-
-    <!-- Path 3: Right diagonal line (upward) - Part 1 -->
-    <path d="M253 1L379 164.5" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
-      <animate attributeName="stroke-dashoffset" from="207.5" to="0" dur="2s" fill="freeze" />
-    </path>
-    <!-- Path 3: Right diagonal line (upward) - Part 2 -->
-    <path d="M379 164.5L505.5 328" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
-      <animate attributeName="stroke-dashoffset" from="-207.5" to="0" dur="2s" fill="freeze" />
-    </path>
-    <!-- Path 4: Left diagonal line (downward) - Part 1 -->
-    <path d="M253 464L127 397" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
-      <animate attributeName="stroke-dashoffset" from="207.5" to="0" dur="2s" fill="freeze" />
-    </path>
-    <!-- Path 4: Left diagonal line (downward) - Part 2 -->
-    <path d="M127 397L1 328" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
-      <animate attributeName="stroke-dashoffset" from="-207.5" to="0" dur="2s" fill="freeze" />
-    </path>
-    <!-- Path 5: Right diagonal line (downward) - Part 1 -->
-    <path d="M253 464L379 397" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
-      <animate attributeName="stroke-dashoffset" from="207.5" to="0" dur="2s" fill="freeze" />
-    </path>
-    <!-- Path 5: Right diagonal line (downward) - Part 2 -->
-    <path d="M379 397L505.5 328" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
-      <animate attributeName="stroke-dashoffset" from="-207.5" to="0" dur="2s" fill="freeze" />
-    </path>
-  </svg>
 
 
+  <div class="circle">
+  </div>
+  <header class="container">
 
+    <nav class='nav'>
+      <div class="nav__logo">
+        <img src="images/logo.png" alt="">
+      </div>
+      <div class="nav__menu">
+        <div class="nav__meunBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <img src="images/MENU.png" alt="">
+      </div>
+      <div class="nav__text">
+        <p class="f-16 f-700">光曜町數位行銷</p>
+        <img src="images/fb.png" alt="">
+      </div>
+    </nav>
+    <div class="list">
+      <div class="list__content">
+        <div class="list__contentImg">
+          <img src="images/logo_big.png" alt="">
+        </div>
+        <div class="list__contentText">
+          <ul class="f-32 f-700">
+            <li><a href="">Index</a></li>
+            <li><a href="">Hikaru OOH</a></li>
+            <li><a href="">Work</a></li>
+            <li><a href="">Our Clients</a></li>
+            <li><a href="">Team Members</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
+  </header>
+  <main class=" container">
+    <section class="Index">
+      <div class="Index__bg">
+        <img src="images/bg_1.png" alt="">
+      </div>
+      <div class="Index__title">
+        <img src="images/title1.png" alt="">
+        <img src="images/title2.png" alt="">
+        <img src="images/title3.png" alt="">
+        <h1 class="f-35 f-700">光曜町－數位整合品牌專家</h1>
+        <h2 class="f-22 f-500">為品牌說好故事，打亮品牌價值力</h2>
+      </div>
+      <div class="Index__ani">
+        <div class="Index__ani--ball"></div>
+        <div class="Index__ani--line1"></div>
+        <div class="Index__ani--line2"></div>
+        <div class="Index__ani--line3"></div>
+        <!-- 動態svg -->
+        <svg width="507" height="465" viewBox="0 0 507 465" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Path 1: Vertical line -->
+          <path d="M253 1V233" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="232">
+            <animate attributeName="stroke-dashoffset" from="232" to="0" dur="2s" fill="freeze" />
+          </path>
+          <!-- Path 1: Vertical line - Part 2 -->
+          <path d="M253 233V464" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="232">
+            <animate attributeName="stroke-dashoffset" from="-232" to="0" dur="2s" fill="freeze" />
+          </path>
+          <!-- Path 2: Left diagonal line (upward) - Part 1 -->
+          <path d="M253 1L127 164.5" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+            <animate attributeName="stroke-dashoffset" from="207.5" to="0" dur="2s" fill="freeze" />
+          </path>
+          <!-- Path 2: Left diagonal line (upward) - Part 2 -->
+          <path d="M127 164.5L1 328" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+            <animate attributeName="stroke-dashoffset" from="-207.5" to="0" dur="2s" fill="freeze" />
+          </path>
+          <!-- Path 3: Right diagonal line (upward) - Part 1 -->
+          <path d="M253 1L379 164.5" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+            <animate attributeName="stroke-dashoffset" from="207.5" to="0" dur="2s" fill="freeze" />
+          </path>
+          <!-- Path 3: Right diagonal line (upward) - Part 2 -->
+          <path d="M379 164.5L505.5 328" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+            <animate attributeName="stroke-dashoffset" from="-207.5" to="0" dur="2s" fill="freeze" />
+          </path>
+          <!-- Path 4: Left diagonal line (downward) - Part 1 -->
+          <path d="M253 464L127 397" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+            <animate attributeName="stroke-dashoffset" from="207.5" to="0" dur="2s" fill="freeze" />
+          </path>
+          <!-- Path 4: Left diagonal line (downward) - Part 2 -->
+          <path d="M127 397L1 328" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+            <animate attributeName="stroke-dashoffset" from="-207.5" to="0" dur="2s" fill="freeze" />
+          </path>
+          <!-- Path 5: Right diagonal line (downward) - Part 1 -->
+          <path d="M253 464L379 397" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+            <animate attributeName="stroke-dashoffset" from="207.5" to="0" dur="2s" fill="freeze" />
+          </path>
+          <!-- Path 5: Right diagonal line (downward) - Part 2 -->
+          <path d="M379 397L505.5 328" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+            <animate attributeName="stroke-dashoffset" from="-207.5" to="0" dur="2s" fill="freeze" />
+          </path>
+        </svg>
+        <img class="Index__lightBall Index__lightBall--set1" src="images/lightBall_s.png" alt="">
+        <img class="Index__lightBall Index__lightBall--set2" src="images/lightBall_s.png" alt="">
 
+      </div>
+    </section>
+    <section class="OOH">
 
+    </section>
+    <section class="Work">
 
+    </section>
+    <section class="Clients">
+
+    </section>
+    <section class="Memebers">
+
+    </section>
+  </main>
+  <footer class="container">
+
+  </footer>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

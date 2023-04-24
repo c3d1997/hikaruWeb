@@ -16,6 +16,9 @@
 .f-26 {
   @include font-size-clamp($pc-font-size-6, 1vw, $pc-font-size-6);
 }
+.f-32 {
+  @include font-size-clamp($pc-font-size-14, 1vw, $pc-font-size-14);
+}
 .f-35 {
   @include font-size-clamp($pc-font-size-7, 1vw, $pc-font-size-7);
 }
@@ -36,4 +39,20 @@
 }
 .f-184 {
   @include font-size-clamp($pc-font-size-13, 1vw, $pc-font-size-13);
+}
+
+.f-300 {
+  font-weight: 300;
+}
+.f-400 {
+  font-weight: 400;
+}
+.f-500 {
+  font-weight: 500;
+}
+.f-700 {
+  font-weight: 700;
+}
+.f-900 {
+  font-weight: 900;
 }

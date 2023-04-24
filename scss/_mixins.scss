@@ -1,3 +1,9 @@
 @mixin font-size-clamp($min-font-size, $ideal-font-size, $max-font-size) {
   font-size: clamp($min-font-size, $ideal-font-size, $max-font-size);
 }
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
