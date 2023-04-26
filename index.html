@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
   <title>Document</title>
   <!-- Noto Sans Traditional Chinese -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,18 +13,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="font/BAHNSCHRIFT.TTF">
+  <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick.css">
+  <!-- <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick-theme.css"> -->
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-
-
   <div class="circle">
   </div>
   <header class="container">
-
     <nav class='nav'>
-      <div class="nav__logo">
+      <div class="nav__logo ">
         <img src="images/logo.png" alt="">
       </div>
       <div class="nav__menu">
@@ -58,88 +58,237 @@
     </div>
 
   </header>
-  <main class=" container">
-    <section class="Index">
-      <div class="Index__bg">
+  <main>
+    <section class="container-full">
+      <div class="Index__bg ">
         <img src="images/bg_1.png" alt="">
+        <div class="bottom-line">
+
+        </div>
       </div>
-      <div class="Index__title">
-        <img src="images/title1.png" alt="">
-        <img src="images/title2.png" alt="">
-        <img src="images/title3.png" alt="">
-        <h1 class="f-35 f-700">光曜町－數位整合品牌專家</h1>
-        <h2 class="f-22 f-500">為品牌說好故事，打亮品牌價值力</h2>
+      <div class="container">
+        <div class="Index__scroll">
+          <p class="f-14 f-300">Scroll</p>
+        </div>
+        <div class="Index ">
+
+          <div class="Index__title">
+            <img src="images/title1.png" alt="">
+            <img src="images/title2.png" alt="">
+            <img src="images/title3.png" alt="">
+            <h1 class="f-35 f-700">光曜町－數位整合品牌專家</h1>
+            <h2 class="f-22 f-500">為品牌說好故事，打亮品牌價值力</h2>
+          </div>
+          <div class="Index__ani">
+            <div class="Index__ani--ball"></div>
+            <div class="Index__ani--line1"></div>
+            <div class="Index__ani--line2"></div>
+            <div class="Index__ani--line3"></div>
+            <!-- 動態svg -->
+            <svg width="507" height="465" viewBox="0 0 507 465" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Path 1: Vertical line -->
+              <path d="M253 1V233" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="232">
+                <animate attributeName="stroke-dashoffset" from="232" to="0" dur="2s" fill="freeze" />
+              </path>
+              <!-- Path 1: Vertical line - Part 2 -->
+              <path d="M253 233V464" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="232">
+                <animate attributeName="stroke-dashoffset" from="-232" to="0" dur="2s" fill="freeze" />
+              </path>
+              <!-- Path 2: Left diagonal line (upward) - Part 1 -->
+              <path d="M253 1L127 164.5" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+                <animate attributeName="stroke-dashoffset" from="207.5" to="0" dur="2s" fill="freeze" />
+              </path>
+              <!-- Path 2: Left diagonal line (upward) - Part 2 -->
+              <path d="M127 164.5L1 328" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+                <animate attributeName="stroke-dashoffset" from="-207.5" to="0" dur="2s" fill="freeze" />
+              </path>
+              <!-- Path 3: Right diagonal line (upward) - Part 1 -->
+              <path d="M253 1L379 164.5" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+                <animate attributeName="stroke-dashoffset" from="207.5" to="0" dur="2s" fill="freeze" />
+              </path>
+              <!-- Path 3: Right diagonal line (upward) - Part 2 -->
+              <path d="M379 164.5L505.5 328" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+                <animate attributeName="stroke-dashoffset" from="-207.5" to="0" dur="2s" fill="freeze" />
+              </path>
+              <!-- Path 4: Left diagonal line (downward) - Part 1 -->
+              <path d="M253 464L127 397" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+                <animate attributeName="stroke-dashoffset" from="207.5" to="0" dur="2s" fill="freeze" />
+              </path>
+              <!-- Path 4: Left diagonal line (downward) - Part 2 -->
+              <path d="M127 397L1 328" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+                <animate attributeName="stroke-dashoffset" from="-207.5" to="0" dur="2s" fill="freeze" />
+              </path>
+              <!-- Path 5: Right diagonal line (downward) - Part 1 -->
+              <path d="M253 464L379 397" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+                <animate attributeName="stroke-dashoffset" from="207.5" to="0" dur="2s" fill="freeze" />
+              </path>
+              <!-- Path 5: Right diagonal line (downward) - Part 2 -->
+              <path d="M379 397L505.5 328" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+                <animate attributeName="stroke-dashoffset" from="-207.5" to="0" dur="2s" fill="freeze" />
+              </path>
+            </svg>
+            <img class="Index__lightBall Index__lightBall--set1" src="images/lightBall_bule.png" alt="">
+            <img class="Index__lightBall Index__lightBall--set2" src="images/lightBall_s.png" alt="">
+            <div class="Index__smalLogo">
+              <img src="images/logo_big.png" alt="">
+              <img src="images/hikaru_slogn.png" alt="">
+            </div>
+
+          </div>
+        </div>
       </div>
-      <div class="Index__ani">
-        <div class="Index__ani--ball"></div>
-        <div class="Index__ani--line1"></div>
-        <div class="Index__ani--line2"></div>
-        <div class="Index__ani--line3"></div>
-        <!-- 動態svg -->
-        <svg width="507" height="465" viewBox="0 0 507 465" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Path 1: Vertical line -->
-          <path d="M253 1V233" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="232">
-            <animate attributeName="stroke-dashoffset" from="232" to="0" dur="2s" fill="freeze" />
-          </path>
-          <!-- Path 1: Vertical line - Part 2 -->
-          <path d="M253 233V464" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="232">
-            <animate attributeName="stroke-dashoffset" from="-232" to="0" dur="2s" fill="freeze" />
-          </path>
-          <!-- Path 2: Left diagonal line (upward) - Part 1 -->
-          <path d="M253 1L127 164.5" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
-            <animate attributeName="stroke-dashoffset" from="207.5" to="0" dur="2s" fill="freeze" />
-          </path>
-          <!-- Path 2: Left diagonal line (upward) - Part 2 -->
-          <path d="M127 164.5L1 328" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
-            <animate attributeName="stroke-dashoffset" from="-207.5" to="0" dur="2s" fill="freeze" />
-          </path>
-          <!-- Path 3: Right diagonal line (upward) - Part 1 -->
-          <path d="M253 1L379 164.5" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
-            <animate attributeName="stroke-dashoffset" from="207.5" to="0" dur="2s" fill="freeze" />
-          </path>
-          <!-- Path 3: Right diagonal line (upward) - Part 2 -->
-          <path d="M379 164.5L505.5 328" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
-            <animate attributeName="stroke-dashoffset" from="-207.5" to="0" dur="2s" fill="freeze" />
-          </path>
-          <!-- Path 4: Left diagonal line (downward) - Part 1 -->
-          <path d="M253 464L127 397" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
-            <animate attributeName="stroke-dashoffset" from="207.5" to="0" dur="2s" fill="freeze" />
-          </path>
-          <!-- Path 4: Left diagonal line (downward) - Part 2 -->
-          <path d="M127 397L1 328" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
-            <animate attributeName="stroke-dashoffset" from="-207.5" to="0" dur="2s" fill="freeze" />
-          </path>
-          <!-- Path 5: Right diagonal line (downward) - Part 1 -->
-          <path d="M253 464L379 397" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
-            <animate attributeName="stroke-dashoffset" from="207.5" to="0" dur="2s" fill="freeze" />
-          </path>
-          <!-- Path 5: Right diagonal line (downward) - Part 2 -->
-          <path d="M379 397L505.5 328" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
-            <animate attributeName="stroke-dashoffset" from="-207.5" to="0" dur="2s" fill="freeze" />
-          </path>
-        </svg>
-        <img class="Index__lightBall Index__lightBall--set1" src="images/lightBall_s.png" alt="">
-        <img class="Index__lightBall Index__lightBall--set2" src="images/lightBall_s.png" alt="">
 
+    </section>
+    <section class="container-full">
+      <div class="OOH__bg">
+        <img src="images/bg_2.png" alt="">
       </div>
-    </section>
-    <section class="OOH">
+      <div class="container">
+        <div class="OOH">
+          <div class="OOH__title">
+            <div class="OOH__title--L">
+              <img src="images/OMO.png" alt="">
+              <p class="f-26 f-900">Online Merge Offline solution</p>
+            </div>
+            <div class="OOH__title--R">
+              <p class="f-18 f-900">以創意策略為核心<br>
+                由數位出發，整合線上與線下的溝通渠道<br>
+                提供最佳數位解決方案<br>
+                讓品牌急速發光發熱，與消費者溝通零界線</p>
+            </div>
+          </div>
+          <div class="OOH__tower">
+            <div class="OOH__ani">
+              <svg width="507" height="465" viewBox="0 0 507 465" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Path 1: Vertical line -->
+                <path d="M253 1V233" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="232">
+                </path>
+                <!-- Path 1: Vertical line - Part 2 -->
+                <path d="M253 233V464" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="232">
+                </path>
+                <!-- Path 2: Left diagonal line (upward) - Part 1 -->
+                <path d="M253 1L127 164.5" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+                </path>
+                <!-- Path 2: Left diagonal line (upward) - Part 2 -->
+                <path d="M127 164.5L1 328" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+                </path>
+                <!-- Path 3: Right diagonal line (upward) - Part 1 -->
+                <path d="M253 1L379 164.5" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+                </path>
+                <!-- Path 3: Right diagonal line (upward) - Part 2 -->
+                <path d="M379 164.5L505.5 328" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+                </path>
+                <!-- Path 4: Left diagonal line (downward) - Part 1 -->
+                <path d="M253 464L127 397" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+                </path>
+                <!-- Path 4: Left diagonal line (downward) - Part 2 -->
+                <path d="M127 397L1 328" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+                </path>
+                <!-- Path 5: Right diagonal line (downward) - Part 1 -->
+                <path d="M253 464L379 397" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+                </path>
+                <!-- Path 5: Right diagonal line (downward) - Part 2 -->
+                <path d="M379 397L505.5 328" stroke="#463D3A" stroke-linecap="square" stroke-dasharray="207.5">
+                </path>
+              </svg>
+              <img class="" src="images/lightBall_xl.png" alt="">
+              <p class="f-16 f-900 OOH__ani--Digital">Digital Marketing<br>Solutions</p>
+              <p class="f-20 f-700 OOH__ani--Branding OOH__ani--all">Branding</p>
+              <p class="f-20 f-700 OOH__ani--Production OOH__ani--all">Production</p>
+              <p class="f-20 f-700 OOH__ani--Social OOH__ani--all">Social</p>
+              <p class="f-20 f-700 OOH__ani--Media OOH__ani--all">Media</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="container-noPadding">
+        <div class="OOH__slick">
+          <div class="OOH__slick--set">
+            <h3 class="f-35 f-900">Branding DIMC</h3>
+            <p class="f-26 f-500">#品牌數位傳播</p>
+            <ul>
+              <li class="f-16 f-400">- 品牌/商品數位整合行銷</li>
+              <li class="f-16 f-400">- 品牌/商品數位活動規劃</li>
+              <li class="f-16 f-400">- 品牌形象影片</li>
+            </ul>
+          </div>
+          <div class="OOH__slick--set">
+            <h3 class="f-35 f-900">Digital Production</h3>
+            <p class="f-26 f-500">#數位整合製作</p>
+            <ul>
+              <li class="f-16 f-400">- 官網/活動網站製作</li>
+              <li class="f-16 f-400">- 系統UI / UX 優化</li>
+              <li class="f-16 f-400">- 廣告素材製作</li>
+              <li class="f-16 f-400">- 影音內容製作</li>
+            </ul>
+          </div>
+          <div class="OOH__slick--set">
+            <h3 class="f-35 f-900">Digital Media Solution</h3>
+            <p class="f-26 f-500">#數位媒體操作</p>
+            <div class="OOH__slick--twoUl">
+              <ul>
+                <li class="f-16 f-400">- 廣告投放策略</li>
+                <li class="f-16 f-400">- 社群廣告投放</li>
+                <li class="f-16 f-400">- 聯播廣告投放</li>
+              </ul>
+              <ul>
+                <li class="f-16 f-400">- 影音廣告投放</li>
+                <li class="f-16 f-400">- 關鍵字投放</li>
+              </ul>
+            </div>
+          </div>
+          <div class="OOH__slick--set">
+            <h3 class="f-35 f-900">Social Content Marketing</h3>
+            <p class="f-26 f-500">#社群內容行銷</p>
+            <div class="OOH__slick--twoUl">
+              <ul>
+                <li class="f-16 f-400">- Facebook</li>
+                <li class="f-16 f-400">- Instagram</li>
+                <li class="f-16 f-400">- Line</li>
+              </ul>
+              <ul>
+                <li class="f-16 f-400">- Youtube</li>
+                <li class="f-16 f-400">- KOL、微網紅操作</li>
+              </ul>
+            </div>
+          </div>
+          <div class="OOH__slick--set">
+            <h3 class="f-35 f-900">Others</h3>
+            <p class="f-26 f-500">#其他延伸服務</p>
+            <div class="OOH__slick--twoUl">
+              <ul>
+                <li class="f-16 f-400">- 網路輿情</li>
+                <li class="f-16 f-400">- BTL製作</li>
+                <li class="f-16 f-400">- IP角色設計</li>
+              </ul>
+              <ul>
+                <li class="f-16 f-400">- 代言人接洽</li>
+                <li class="f-16 f-400">- O2O活動整合</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
 
     </section>
-    <section class="Work">
+    <section class="Work container">
 
     </section>
-    <section class="Clients">
+    <section class="Clients container">
 
     </section>
-    <section class="Memebers">
+    <section class="Memebers container">
 
     </section>
   </main>
-  <footer class="container">
+  <footer class="container container">
 
   </footer>
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/slick-carousel/slick/slick.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 

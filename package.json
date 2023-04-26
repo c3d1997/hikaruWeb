@@ -16,6 +16,8 @@
     "gulp-sass": "^5.1.0",
     "gulp-watch": "^5.0.1",
     "jquery": "^3.6.4",
-    "sass": "^1.58.1"
+    "sass": "^1.58.1",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^9.2.4"
   }
 }

@@ -11,6 +11,7 @@ header {
   border-right: 1px solid black;
   position: fixed;
   left: 0;
+  top: 0;
   flex-direction: column;
   z-index: 2;
   &__logo {
@@ -75,19 +76,20 @@ header {
       line-height: 80px;
       writing-mode: vertical-lr;
       margin-bottom: 16px;
+      letter-spacing: 0.03em;
     }
   }
 }
 
 .list {
-  position: absolute;
+  position: fixed;
   left: 80px;
   top: 0;
   z-index: 1;
   .active {
     transform: translateX(0%);
     opacity: 1;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(16px);
   }
   &__content {
     z-index: -1;
@@ -122,10 +124,12 @@ header {
     ul {
       .active a {
         color: black;
+        transition: 0.75s;
       }
       .active {
         &::after {
           background-color: black;
+          transition: 0.75s;
         }
       }
       li {
@@ -150,6 +154,7 @@ header {
           color: white;
         }
       }
+
       :last-child {
         margin-bottom: 0;
       }

@@ -10,6 +10,9 @@
 .f-18 {
   @include font-size-clamp($pc-font-size-4, 1vw, $pc-font-size-4);
 }
+.f-20 {
+  @include font-size-clamp($pc-font-size-15, 1vw, $pc-font-size-15);
+}
 .f-22 {
   @include font-size-clamp($pc-font-size-5, 1vw, $pc-font-size-5);
 }
