@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "BAHNSCHRIFT";
+  src: url("./font/BAHNSCHRIFT.TTF") format("truetype");
+}
 body {
   font-family: "Noto Sans TC", sans-serif;
   // overflow-x: hidden;
@@ -15,6 +19,12 @@ svg {
   max-width: 1920px;
   padding: 0px 80px;
   position: relative;
+  @include media-1280 {
+    padding: 0px 40px 0px 80px;
+  }
+  @include media-768 {
+    padding: 0px 30px;
+  }
 }
 .container-noPadding {
   width: 100%;
@@ -36,38 +46,39 @@ svg {
   background-color: black;
   bottom: 0;
   left: 80px;
+  @include media-768 {
+    left: 0px;
+  }
 }
 .circle {
   width: 20px;
   height: 20px;
-  background: #fff;
+  background-color: rgb(6, 210, 149);
   position: absolute;
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  // 類似負片
-  // mix-blend-mode: difference;
-  opacity: 0.2;
   z-index: 999;
+  opacity: 0.2;
   pointer-events: none;
   transition: 1;
 }
 .circle--active {
   width: 80px;
   height: 80px;
-  background: #fff;
+  background-color: rgb(6, 210, 149);
   position: absolute;
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  // 類似負片
-  mix-blend-mode: difference;
-  opacity: 1;
+  opacity: 0.2;
   z-index: 999;
   transition: width 0.5s, height 0.5s;
 }
 .circle--Nactive {
-  background-color: black;
+  background-color: rgb(6, 210, 149);
+  opacity: 0.2;
   transition: width 0.5s, height 0.5s;
 }
+
 .dis-none {
   display: none;
 }

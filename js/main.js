@@ -37,24 +37,35 @@ $(function () {
       'top': circleY + 'px'
     });
 
-    // 特定 區塊 碰觸的功能
     let circleElem = $('.circle');
-    let specificElem = $('.nav');
+    let specificElems = [
+      $('.nav'),
+      $('.Index__scroll p'),
+      $('.OOH__ani--circle1'),
+      $('.OOH__ani--circle2'),
+      $('.OOH__ani--circle3'),
+      $('.OOH__ani--circle4')
+    ];
 
     let circleOffset = circleElem.offset();
     let circleWidth = circleElem.outerWidth();
     let circleHeight = circleElem.outerHeight();
 
-    let specificOffset = specificElem.offset();
-    let specificWidth = specificElem.outerWidth();
-    let specificHeight = specificElem.outerHeight();
+    let s = false;
+    for (let i = 0; i < specificElems.length; i++) {
+      let specificOffset = specificElems[i].offset();
+      let specificWidth = specificElems[i].outerWidth();
+      let specificHeight = specificElems[i].outerHeight();
+      if (circleOffset.left + circleWidth > specificOffset.left &&
+        circleOffset.left < specificOffset.left + specificWidth &&
+        circleOffset.top + circleHeight > specificOffset.top &&
+        circleOffset.top < specificOffset.top + specificHeight) {
+        s = true;
+        break;
+      }
+    }
 
-    if (
-      circleOffset.left + circleWidth > specificOffset.left &&
-      circleOffset.left < specificOffset.left + specificWidth &&
-      circleOffset.top + circleHeight > specificOffset.top &&
-      circleOffset.top < specificOffset.top + specificHeight
-    ) {
+    if (s) {
       circleElem.addClass('circle--active');
       circleElem.removeClass('circle--Nactive');
     } else {
@@ -63,13 +74,38 @@ $(function () {
     }
 
     requestAnimationFrame(animate);
+
   }
   animate();
 
-  $(".OOH__slick").on("init reInit afterChange", function (event, slick, currentSlide) {
-    // 設定特定class的函數
-    setFixedClasses(slick);
+  $('.OOH__ani--Branding').on('click', function () {
+    // 切換輪播到第一個幻燈片
+    $('.OOH__slick').slick('slickGoTo', 0);
+    $('.OOH__slick--Branding').css('background-color', '#37373d')
+    $('.slick-slide:not(.OOH__slick--Branding)').css('background-color', 'black');
+
   });
+
+  $('.OOH__ani--Production').on('click', function () {
+    // 切換輪播到第一個幻燈片
+    $('.OOH__slick').slick('slickGoTo', 1);
+    $('.OOH__slick--Production').css('background-color', '#37373d')
+    $('.slick-slide:not(.OOH__slick--Production)').css('background-color', 'black');
+  });
+
+  $('.OOH__ani--Social').on('click', function () {
+    // 切換輪播到第一個幻燈片
+    $('.OOH__slick').slick('slickGoTo', 3);
+    $('.OOH__slick--Social').css('background-color', '#37373d')
+    $('.slick-slide:not(.OOH__slick--Social)').css('background-color', 'black');
+  });
+  $('.OOH__ani--Media').on('click', function () {
+    // 切換輪播到第一個幻燈片
+    $('.OOH__slick').slick('slickGoTo', 2);
+    $('.OOH__slick--Media').css('background-color', '#37373d')
+    $('.slick-slide:not(.OOH__slick--Media)').css('background-color', 'black');
+  });
+
   $('.OOH__slick').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -93,17 +129,5 @@ $(function () {
     ],
 
   });
-  function setFixedClasses(slick) {
-    var currentSlideIndex = slick.currentSlide;
-    var totalSlides = slick.slideCount;
+});
 
-    // 檢查並設定顯示中的第一個輪播項目的背景
-    slick.$slides.eq(currentSlideIndex % totalSlides).removeClass("OOH__slick--bg1 OOH__slick--bg2 OOH__slick--bg3").addClass("OOH__slick--bg1");
-
-    // 檢查並設定顯示中的第二個輪播項目的背景
-    slick.$slides.eq((currentSlideIndex + 1) % totalSlides).removeClass("OOH__slick--bg1 OOH__slick--bg2 OOH__slick--bg3").addClass("OOH__slick--bg2");
-
-    // 檢查並設定顯示中的第三個輪播項目的背景
-    slick.$slides.eq((currentSlideIndex + 2) % totalSlides).removeClass("OOH__slick--bg1 OOH__slick--bg2 OOH__slick--bg3").addClass("OOH__slick--bg3");
-  }
-});   

@@ -13,9 +13,39 @@ header {
   left: 0;
   top: 0;
   flex-direction: column;
-  z-index: 2;
+  z-index: 9999;
+  @include media-768 {
+    width: 100%;
+    flex-direction: row;
+    height: 80px;
+    border-right: 0px solid black;
+    border-bottom: 1px solid black;
+    padding: 0 30px;
+    backdrop-filter: blur(16px);
+  }
   &__logo {
     margin-top: 26px;
+    height: 80px;
+    img:nth-child(1) {
+      display: unset;
+    }
+    img:nth-child(2) {
+      display: none;
+    }
+    @include media-768 {
+      flex-grow: 2;
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      img:nth-child(1) {
+        display: none;
+      }
+      img:nth-child(2) {
+        display: block;
+        max-width: 100px;
+      }
+    }
   }
   &__menu {
     @include flex-center;
@@ -72,6 +102,9 @@ header {
     @include flex-center;
     flex-direction: column;
     margin-bottom: 36px;
+    @include media-768 {
+      display: none;
+    }
     p {
       line-height: 80px;
       writing-mode: vertical-lr;
@@ -86,12 +119,22 @@ header {
   left: 80px;
   top: 0;
   z-index: 1;
+  @include media-768 {
+    top: 80px;
+  }
   .active {
     transform: translateX(0%);
     opacity: 1;
     backdrop-filter: blur(16px);
   }
   &__content {
+    @include media-768 {
+      justify-content: start;
+      width: 80vw;
+      left: -80px;
+      padding: 0;
+      padding-top: 80px;
+    }
     z-index: -1;
     backdrop-filter: blur(0px);
     padding: 0 68px;
@@ -104,11 +147,14 @@ header {
     height: 100svh;
     @include flex-center;
     flex-direction: column;
-    transform: translateX(-50%);
+    transform: translateX(-150%);
     opacity: 0;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
   &__contentImg {
+    @include media-768 {
+      display: none;
+    }
     width: 100%;
     border-bottom: 1px solid black;
     @include flex-center;
@@ -117,6 +163,11 @@ header {
     }
   }
   &__contentText {
+    @include media-768 {
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+    }
     padding: 90px 0 0 0;
     width: 100%;
     display: flex;

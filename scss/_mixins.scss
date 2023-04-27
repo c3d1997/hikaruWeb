@@ -7,3 +7,24 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin media-1280 {
+  @media (max-width: 1280px) {
+    @content;
+  }
+}
+@mixin media-1024 {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin media-768 {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin media-620 {
+  @media (max-width: 620px) {
+    @content;
+  }
+}

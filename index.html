@@ -12,7 +12,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="font/BAHNSCHRIFT.TTF">
   <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick.css">
   <!-- <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick-theme.css"> -->
   <link rel="stylesheet" href="css/main.css">
@@ -25,6 +24,7 @@
     <nav class='nav'>
       <div class="nav__logo ">
         <img src="images/logo.png" alt="">
+        <img src="images/logo_big.png" alt="">
       </div>
       <div class="nav__menu">
         <div class="nav__meunBtn">
@@ -62,6 +62,7 @@
     <section class="container-full">
       <div class="Index__bg ">
         <img src="images/bg_1.png" alt="">
+        <!-- <canvas id="Index__bgCanvas"></canvas> -->
         <div class="bottom-line">
 
         </div>
@@ -69,8 +70,9 @@
       <div class="container">
         <div class="Index__scroll">
           <p class="f-14 f-300">Scroll</p>
+          <div class="Index__scroll--line"></div>
         </div>
-        <div class="Index ">
+        <div class="Index">
 
           <div class="Index__title">
             <img src="images/title1.png" alt="">
@@ -148,7 +150,7 @@
           <div class="OOH__title">
             <div class="OOH__title--L">
               <img src="images/OMO.png" alt="">
-              <p class="f-26 f-900">Online Merge Offline solution</p>
+              <img src="images/OMO_slogn.png" alt="">
             </div>
             <div class="OOH__title--R">
               <p class="f-18 f-900">以創意策略為核心<br>
@@ -193,10 +195,10 @@
               </svg>
               <img class="" src="images/lightBall_xl.png" alt="">
               <p class="f-16 f-900 OOH__ani--Digital">Digital Marketing<br>Solutions</p>
-              <p class="f-20 f-700 OOH__ani--Branding OOH__ani--all">Branding</p>
-              <p class="f-20 f-700 OOH__ani--Production OOH__ani--all">Production</p>
-              <p class="f-20 f-700 OOH__ani--Social OOH__ani--all">Social</p>
-              <p class="f-20 f-700 OOH__ani--Media OOH__ani--all">Media</p>
+              <p class="f-20 f-700 OOH__ani--Branding OOH__ani--all OOH__ani--circle1">Branding</p>
+              <p class="f-20 f-700 OOH__ani--Production OOH__ani--all OOH__ani--circle2">Production</p>
+              <p class="f-20 f-700 OOH__ani--Social OOH__ani--all OOH__ani--circle3">Social</p>
+              <p class="f-20 f-700 OOH__ani--Media OOH__ani--all OOH__ani--circle4">Media</p>
             </div>
           </div>
 
@@ -204,7 +206,7 @@
       </div>
       <div class="container-noPadding">
         <div class="OOH__slick">
-          <div class="OOH__slick--set">
+          <div class="OOH__slick--set OOH__slick--Branding">
             <h3 class="f-35 f-900">Branding DIMC</h3>
             <p class="f-26 f-500">#品牌數位傳播</p>
             <ul>
@@ -213,7 +215,7 @@
               <li class="f-16 f-400">- 品牌形象影片</li>
             </ul>
           </div>
-          <div class="OOH__slick--set">
+          <div class="OOH__slick--set OOH__slick--Production">
             <h3 class="f-35 f-900">Digital Production</h3>
             <p class="f-26 f-500">#數位整合製作</p>
             <ul>
@@ -223,7 +225,7 @@
               <li class="f-16 f-400">- 影音內容製作</li>
             </ul>
           </div>
-          <div class="OOH__slick--set">
+          <div class="OOH__slick--set OOH__slick--Media ">
             <h3 class="f-35 f-900">Digital Media Solution</h3>
             <p class="f-26 f-500">#數位媒體操作</p>
             <div class="OOH__slick--twoUl">
@@ -238,7 +240,7 @@
               </ul>
             </div>
           </div>
-          <div class="OOH__slick--set">
+          <div class="OOH__slick--set OOH__slick--Social">
             <h3 class="f-35 f-900">Social Content Marketing</h3>
             <p class="f-26 f-500">#社群內容行銷</p>
             <div class="OOH__slick--twoUl">
@@ -289,6 +291,7 @@
   </footer>
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <script src="./node_modules/slick-carousel/slick/slick.min.js"></script>
+
   <script src="./js/main.js"></script>
 </body>
 
