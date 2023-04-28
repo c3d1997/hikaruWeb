@@ -4,7 +4,7 @@
 }
 body {
   font-family: "Noto Sans TC", sans-serif;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 img,
 svg {
@@ -79,8 +79,57 @@ svg {
   transition: width 0.5s, height 0.5s;
 }
 
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+.lds-ring,
+.lds-ring-bg {
+  position: relative;
+  left: calc(50% - 320px / 2);
+  top: calc(50% - 320px / 2);
+  z-index: 10;
+}
+.lds-ring-bg {
+  z-index: 9;
+}
+.lds-ring div {
+  display: block;
+  position: absolute;
+  transform-origin: center center;
+  width: 320px;
+  height: 320px;
+  margin: 0px;
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 3s linear infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring-bg div {
+  display: block;
+  position: absolute;
+  transform-origin: center center;
+  width: 320px;
+  height: 320px;
+  margin: 0px;
+  border: 2px solid #3e3e3e;
+  border-radius: 50%;
+  border-color: #3e3e3e;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .dis-none {
-  display: none;
+  display: none !important;
 }
 
 .d-flex {
@@ -90,3 +139,45 @@ svg {
 .flex-center {
   @include flex-center;
 }
+.Index__title {
+  div,
+  h1,
+  h2 {
+    position: relative;
+  }
+}
+.line {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transform-origin: left;
+}
+.line-6 {
+  bottom: 10px;
+}
+// ::-webkit-scrollbar {
+//   width: 10px;
+// }
+
+// /* 滚动条轨道样式 */
+// ::-webkit-scrollbar-track {
+//   background: #f1f1f1;
+// }
+
+// /* 滚动条滑块样式 */
+// ::-webkit-scrollbar-thumb {
+//   background: #888;
+// }
+
+// /* 激活滚动条滑块样式 */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #555;
+// }
+
+// /* 按下滚动条滑块样式 */
+// ::-webkit-scrollbar-thumb:active {
+//   background: #333;
+// }

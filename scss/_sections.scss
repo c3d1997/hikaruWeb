@@ -1,7 +1,7 @@
 .Index {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   @include media-1024 {
     flex-wrap: wrap;
   }
@@ -10,6 +10,7 @@
   height: 100svh;
   max-width: 1300px;
   margin: auto;
+
   &__bg {
     width: 100%;
     position: absolute;
@@ -26,7 +27,7 @@
   }
   &__title {
     @include media-1280 {
-      padding-left: 40px;
+      padding-left: 100px;
     }
 
     @include media-1024 {
@@ -35,7 +36,9 @@
     @include media-768 {
       padding-left: 0px;
     }
-
+    .div {
+      overflow: hidden;
+    }
     padding-bottom: 80px;
     display: flex;
     align-items: start;
@@ -74,6 +77,7 @@
   }
   &__ani {
     position: relative;
+    margin-left: 20px;
     @include media-1024 {
       display: none;
     }
@@ -129,11 +133,13 @@
       z-index: 1;
     }
   }
+
   &__scroll {
     position: absolute;
     right: 85px;
     z-index: 2;
     bottom: 0;
+    opacity: 0;
     @include media-620 {
       right: 48%;
     }
@@ -188,8 +194,10 @@
   &__smalLogo {
     width: 118px;
     position: absolute;
-    right: calc(33% - 118px / 2);
-    bottom: calc(41% - 63px / 2);
+
+    // right: calc(33% - 118px / 2);
+    // bottom: calc(41% - 63px / 2);
+
     img {
       width: 100%;
       margin-bottom: 10px;
@@ -198,13 +206,23 @@
       }
     }
   }
+  &__smalLogoW {
+    right: calc(50% - 118px / 2);
+    bottom: calc(50% - 26px / 2);
+  }
+  &__smalLogoB {
+    right: calc(50% - 118px / 2);
+    bottom: calc(50% - 26px / 2);
+  }
+  &__slogn {
+    right: calc(33% - 118px / 2);
+    bottom: calc(41% - 26px / 2);
+  }
   &__lightBall {
     position: absolute;
-
     &--set1 {
       max-width: 147px;
       width: 100%;
-
       left: calc(50% - 147px / 2);
       top: calc(50% - 147px / 2);
       transform: translate(-12px, -10px);
@@ -248,6 +266,7 @@
     }
   }
   &__title {
+    width: 100%;
     @include media-1280 {
       padding-left: 40px;
       padding-right: 70px;
@@ -282,6 +301,10 @@
       }
     }
     &--L {
+      div {
+        position: relative;
+        overflow: hidden;
+      }
       @include flex-center;
       flex-direction: column;
       @include media-1024 {
@@ -313,7 +336,7 @@
   &__tower {
     @include flex-center;
     width: 100%;
-    margin-bottom: 120px;
+    margin-bottom: 160px;
     @include media-1024 {
       margin-top: -50px;
     }
@@ -417,7 +440,7 @@
       left: calc(69% - 70px);
       @include media-1024 {
         top: calc(57% - 22px);
-        left: calc(69% - 61px);
+        left: calc(73% - 61px);
       }
     }
     &--Branding {
@@ -449,6 +472,7 @@
       }
     }
   }
+
   &__slick {
     color: white;
     margin-left: 80px;
