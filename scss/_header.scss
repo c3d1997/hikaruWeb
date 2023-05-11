@@ -13,7 +13,7 @@ header {
   left: 0;
   top: 0;
   flex-direction: column;
-  z-index: 9999;
+  z-index: 99;
   @include media-768 {
     width: 100%;
     flex-direction: row;
